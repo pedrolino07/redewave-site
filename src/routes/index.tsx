@@ -4,7 +4,7 @@ import {
   Megaphone, Share2, MonitorSmartphone, Cpu, Compass, Puzzle,
   ArrowRight, Instagram, MessageCircle, Mail, Menu, X, User,
 } from "lucide-react";
-import logo from "@/assets/redwave-logo.jpeg.asset.json";
+const logo = "/redwave-logo.jpeg";
 import { WaveBackground } from "@/components/site/WaveBackground";
 import { ContactForm } from "@/components/site/ContactForm";
 import { site, whatsappLink, navLinks } from "@/lib/site-config";
@@ -61,10 +61,13 @@ function useReveal() {
 
 function Logo({ className = "" }: { className?: string }) {
   return (
-    <a href="#inicio" className={`flex items-center gap-2 ${className}`} aria-label="RedeWaves, início">
-      <img src={logo.url} alt="" className="h-9 w-9 rounded object-cover object-[50%_42%] scale-150" width={36} height={36} />
+    <a
+      href="#inicio"
+      className={`flex items-center gap-2 ${className}`}
+      aria-label="RedeWave, início"
+    >
       <span className="font-display text-lg font-bold tracking-wide">
-        <span className="text-primary">Rede</span>Waves
+        <span className="text-primary">Rede</span>Wave
       </span>
     </a>
   );
@@ -121,7 +124,7 @@ function Index() {
               <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-primary" /> Marketing · Tecnologia · Inovação
             </p>
             <h1 className="reveal text-5xl font-extrabold leading-[1.05] sm:text-7xl lg:text-8xl">
-              <span className="text-gradient-red">Rede</span>Waves
+              <span className="text-gradient-red">Rede</span>Wave
             </h1>
             <p className="reveal mt-6 max-w-3xl font-display text-xl font-medium leading-snug sm:text-2xl">
               Sua visão. Nossa tecnologia.<br />
@@ -132,7 +135,7 @@ function Index() {
             </p>
             <div className="reveal mt-10 flex flex-col gap-4 sm:flex-row">
               <a href="#solucoes" className="group inline-flex items-center justify-center gap-2 rounded-md bg-primary px-7 py-3.5 font-medium text-primary-foreground transition hover:bg-primary-glow hover:glow">
-                Conheça nossas soluções <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                Conheça nossas soluções <ArrowRight classNsame="h-4 w-4 transition group-hover:translate-x-1" />
               </a>
               <a href="#contato" className="inline-flex items-center justify-center rounded-md border border-border px-7 py-3.5 font-medium transition hover:border-primary hover:text-primary">
                 Fale com a nossa equipe
@@ -161,7 +164,7 @@ function Index() {
           <div aria-hidden className="absolute -right-40 top-1/2 h-96 w-96 -translate-y-1/2 rounded-full bg-primary/15 blur-[120px]" />
           <div className="relative mx-auto grid max-w-6xl gap-14 px-5 lg:grid-cols-[1fr_1.3fr]">
             <div className="reveal">
-              <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-primary">Por que a RedeWaves?</p>
+              <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-primary">Por que a RedeWave?</p>
               <h2 className="text-3xl font-bold leading-tight sm:text-4xl">Princípios que guiam cada projeto.</h2>
             </div>
             <ol className="divide-y divide-border">
@@ -196,12 +199,12 @@ function Index() {
         <section id="sobre" className="scroll-mt-16 border-t border-border py-28">
           <div className="mx-auto grid max-w-6xl gap-14 px-5 lg:grid-cols-2">
             <div className="reveal">
-              <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-primary">Sobre a RedeWaves</p>
+              <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-primary">Sobre a RedeWave</p>
               <h2 className="text-3xl font-bold leading-tight sm:text-4xl">
                 Mais do que presença digital. <span className="text-gradient-red">Soluções que conectam ideias e resultados.</span>
               </h2>
               <p className="mt-6 leading-relaxed text-muted-foreground">
-                A RedeWaves nasceu da união entre visão empreendedora, tecnologia e criatividade. Nosso propósito é ajudar empresas e criadores a explorarem novas oportunidades no ambiente digital, desenvolvendo soluções que conectam pessoas, marcas e negócios.
+                A RedeWave nasceu da união entre visão empreendedora, tecnologia e criatividade. Nosso propósito é ajudar empresas e criadores a explorarem novas oportunidades no ambiente digital, desenvolvendo soluções que conectam pessoas, marcas e negócios.
               </p>
             </div>
             <div className="grid gap-5 sm:grid-cols-2">
@@ -229,7 +232,7 @@ function Index() {
               <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-primary">Contato</p>
               <h2 className="text-3xl font-bold leading-tight sm:text-5xl">Sua próxima ideia começa aqui.</h2>
               <p className="mt-6 text-muted-foreground">
-                Conte para nós o que você deseja construir. Vamos conversar sobre como a RedeWaves pode ajudar.
+                Conte para nós o que você deseja construir. Vamos conversar sobre como a RedeWave pode ajudar.
               </p>
               <div className="mt-10 flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-md bg-whatsapp px-6 py-3 font-medium text-background transition hover:opacity-90">
@@ -272,7 +275,7 @@ function Index() {
           </div>
         </div>
         <div className="border-t border-border py-6 text-center text-xs text-muted-foreground">
-          © {year} RedeWaves. Todos os direitos reservados.
+          © {year} RedeWave. Todos os direitos reservados.
         </div>
       </footer>
 

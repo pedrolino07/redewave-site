@@ -2,9 +2,9 @@
 export const site = {
   name: "RedeWaves",
   slogan: "Sua visão. Nossa tecnologia. Seus problemas, nossas soluções.",
-  whatsappNumber: "5500000000000", // formato internacional, só números
+  whatsappNumber: "5562920069563", // formato internacional, só números
   whatsappMessage: "Olá, RedeWaves! Gostaria de conversar sobre um projeto.",
-  instagram: "https://instagram.com/redewaves",
+  instagram: "https://www.instagram.com/redwave.ms/",
   email: "contato@redewaves.com.br",
 };
 
