@@ -1,6 +1,6 @@
 // Contatos da RedeWaves — substitua pelos dados reais.
 export const site = {
-  name: "RedeWaves",
+  name: "RedeWave ",
   slogan: "Sua visão. Nossa tecnologia. Seus problemas, nossas soluções.",
   whatsappNumber: "5562920069563", // formato internacional, só números
   whatsappMessage: "Olá, RedeWaves! Gostaria de conversar sobre um projeto.",
